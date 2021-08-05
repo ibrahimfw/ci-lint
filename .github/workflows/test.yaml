@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  - pull_request
+
+jobs:
+  lint:
+    name: Test Lint
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Lint the content
+        uses: stoplightio/spectral-action@v0.7.3
+        with:
+          file_glob: 'spec/**/*.yaml'
