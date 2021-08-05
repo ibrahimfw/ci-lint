@@ -1,0 +1,19 @@
+{
+  "name": "ci-lint",
+  "version": "0.0.1",
+  "description": "Sample OpenAPI Spec 2.0",
+  "scripts": {
+    "build": "swagger-cli bundle spec/index.yaml --outfile _build/test.oas.yaml --type yaml",
+    "test": "spectral lint spec/**.yaml",
+    "clean": "rm -r _build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimfw/ci-lint"
+  },
+  "homepage": "https://github.com/ibrahimfw/ci-lint#readme",
+  "dependencies": {
+    "@apidevtools/swagger-cli": "^4.0.4",
+    "@stoplight/spectral": "^5.9.1"
+  }
+}
