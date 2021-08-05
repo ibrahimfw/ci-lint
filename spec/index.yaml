@@ -1,0 +1,60 @@
+swagger: '2.0'
+info:
+  title: Sample
+  description: Public REST APIs
+  version: 2.0.1
+  contact:
+    name: Mohamed Ibrahim
+    email: mohamed.ibrahim@example.com
+  license:
+    name: Apache 2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+schemes:
+  - https
+security:
+  - Personal API Key: [ ]
+#tags:
+#  - name: Tickets
+#    description: Tickets API
+paths:
+  /api/v2/tickets:
+    get:
+      operationId: tickets-list
+      description: Get Tickets List
+      summary: List all Tickets
+      tags:
+        - Tickets
+      security:
+        - Personal API Key: [ ]
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Ticket'
+  '/api/v2/ticket/{ticket_id}':
+    get:
+      operationId: get-ticket
+      description: Get Ticket by ticket_id
+      summary: Get Ticket by ticket_id
+      tags:
+        - Tickets
+      security:
+        - Personal API Key: [ ]
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Ticket'
+      parameters:
+        - name: ticket_id
+          in: path
+          type: integer
+          format: int64
+          required: true
+securityDefinitions:
+  Personal API Key:
+    type: basic
+    description: 'You can use your personal API key to authenticate the request. If you use the API key, there is no need for a password. You can use any set of characters as a dummy password.'
+definitions:
+  Ticket:
+    $ref: './schemas/ticket.yaml'

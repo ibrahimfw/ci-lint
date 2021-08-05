@@ -1,0 +1,18 @@
+formats:
+  - oas2
+extends:
+  - 'fw-style-guide'
+rules:
+  #  Overriding severity level
+  info-description: warn
+  info-contact: warn
+  operation-tag-defined: warn
+  operation-operationId: warn
+  operation-tags: warn
+  fw-info-license: warn
+  fw-operation-summary: warn
+  fw-schema-properties-example: warn
+  fw-properties-underscore-case: warn
+  fw-ensure-no-legacy-tags: warn
+  fw-path-kebab-case: warn
+  fw-path-param-underscore-case: warn

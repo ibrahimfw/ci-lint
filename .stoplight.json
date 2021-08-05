@@ -1,0 +1,23 @@
+{
+  "exclude": ["_build", ".github", ".husky", "package*.json", ".gitignore"],
+  "formats": {
+    "openapi": {
+      "rootDir": "spec",
+      "include": [
+        "**"
+      ]
+    },
+    "json_schema": {
+      "rootDir": "spec/schemas",
+      "include": [
+        "**"
+      ]
+    },
+    "markdown": {
+      "rootDir": "docs"
+    },
+    "image": {
+      "rootDir": "assets/images"
+    }
+  }
+}

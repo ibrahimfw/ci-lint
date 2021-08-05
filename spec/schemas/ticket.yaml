@@ -1,0 +1,14 @@
+title: Ticket
+type: object
+x-tags:
+  - Tickets
+properties:
+  Id:
+    type: number
+    description: Unique ID of the ticket
+    readOnly: true
+    example: 12345
+  subjec-t: #test commit
+    type: string
+    description: Subject of the Ticket
+    example: Update email request
