@@ -4,7 +4,7 @@
   "description": "Sample OpenAPI Spec 2.0",
   "scripts": {
     "build": "swagger-cli bundle spec/index.yaml --outfile _build/test.oas.yaml --type yaml",
-    "test": "spectral lint spec/**.yaml",
+    "test": "spectral lint spec/index.yaml",
     "clean": "rm -r _build"
   },
   "repository": {

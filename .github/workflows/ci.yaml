@@ -16,4 +16,4 @@ jobs:
       - name: Lint the content
         uses: stoplightio/spectral-action@v0.8.0
         with:
-          file_glob: 'spec/**.yaml'
+          file_glob: 'spec/index.yaml'
