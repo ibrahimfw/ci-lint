@@ -1,7 +1,7 @@
 formats:
   - oas2
 extends:
-  - 'fw-style-guide'
+  - https://unpkg.com/fw-style-guide
 rules:
   #  Overriding severity level
   info-description: warn
