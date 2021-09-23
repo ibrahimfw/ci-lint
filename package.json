@@ -14,6 +14,6 @@
   "homepage": "https://github.com/ibrahimfw/ci-lint#readme",
   "dependencies": {
     "@apidevtools/swagger-cli": "^4.0.4",
-    "@stoplight/spectral": "^5.9.1"
+    "@stoplight/spectral-cli": "6.0.0"
   }
 }
